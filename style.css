@@ -8,6 +8,9 @@
 
 body{
     background: linear-gradient(45deg, #32323e, #5a5757) fixed;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 header{
@@ -16,7 +19,7 @@ header{
     background: linear-gradient(to right, #2b2b2b, #3b3b3b);
     color: #fff;
     border-bottom-style: solid;
-    border-color: #888888;
+    border-color: #3b3b3b;
 }
 
 .logo {
@@ -35,6 +38,7 @@ header{
 
 main {
     padding-top: 5vh;
+    flex: 1;
 }
 
 .text {
@@ -44,14 +48,13 @@ main {
 }
 
 .container {
-    width: 250px;
-    height: 250px;
+    width: 275px;
+    height: 260px;
     background: linear-gradient(45deg, #ff670f, #ff8453);
     border-radius: 15px;
-    box-shadow: 0 0 15px 0 #252525;
+    box-shadow: 0 0 15px 0 #993d00;
     margin: 0 auto;
     margin-bottom: 10vh;
-    border-bottom-style: solid;
 }
 
 .func {
@@ -66,12 +69,29 @@ main {
     list-style: none;
 }
 
-.list li {
-    gap: 3px;
+.items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 15px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    color: white;
+    font-weight: 500;
 }
 
-.items {
-    margin-bottom: 10px;
+.icon {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    color: #ff670f;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 
 .button {
@@ -95,4 +115,13 @@ main {
 .button .btn:hover {
     box-shadow: 0 0 15px hsl(22, 100%, 50%);
     padding: 28px;
+}
+
+footer {
+    padding: 15px;
+    text-align: center;
+    background-color: #2b2b2b;
+    border-top-style: solid;
+    border-color: #3b3b3b;
+    color: #fff;
 }
