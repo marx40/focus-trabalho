@@ -3,24 +3,96 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: "Noto Sans", sans-serif;
 }
 
 body{
-    background-color: #23232b;
+    background: linear-gradient(45deg, #32323e, #5a5757) fixed;
 }
 
 header{
     text-align: center;
     padding: 15px;
-    background-color: #f7640f;
+    background: linear-gradient(to right, #2b2b2b, #3b3b3b);
     color: #fff;
     border-bottom-style: solid;
+    border-color: #888888;
 }
 
+.logo {
+    position:relative;
+    margin-right: 10px;
+}
+
+.title {
+    transition: 0.5s;
+}
+
+.title:hover{
+    text-shadow: 0 0 10px #ff8453;
+  
+}
+
+main {
+    padding-top: 5vh;
+}
 
 .text {
     text-align: center;
     padding: 50px;
+    color: #fff;
+}
+
+.container {
+    width: 250px;
+    height: 250px;
+    background: linear-gradient(45deg, #ff670f, #ff8453);
+    border-radius: 15px;
+    box-shadow: 0 0 15px 0 #252525;
+    margin: 0 auto;
+    margin-bottom: 10vh;
+    border-bottom-style: solid;
+}
+
+.func {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+
+.list ul{
+    list-style: none;
+}
+
+.list li {
+    gap: 3px;
+}
+
+.items {
+    margin-bottom: 10px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button .btn {
+    padding: 25px;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #ff670f, #ff8453);
+    color: #fff;
+    transition: 0.5s;
+}
+
+.button .btn:hover {
+    box-shadow: 0 0 15px hsl(22, 100%, 50%);
+    padding: 28px;
 }
